@@ -7,3 +7,6 @@ $ npm run install
 $ npm run dev
 
 
+I need to credit where I found the parts this is made of:
+# CodeAcademy
+# Nader Dabi
