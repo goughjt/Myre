@@ -11,7 +11,7 @@ module.exports = {
   module: {
     loaders: [
       {
-        test: [/\.js$/, /\.es6$/, /\.jsx$/],
+        test: [/\.es6$/, /\.jsx?$/],
         exclude: /(node_modules|bower_components)/,
         loader: 'babel-loader',
         query: {
@@ -39,7 +39,7 @@ if (!debug) {
   var WebpackStripLoader = require('strip-loader');
 
   var stripLoader = {
-   test: [/\.js$/, /\.es6$/, /\.js$/],
+   test: [/\.es6$/, /\.jsx?$/],
    exclude: /(node_modules|bower_components)/,
    loader: WebpackStripLoader.loader('console.log')
   }
