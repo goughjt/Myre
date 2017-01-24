@@ -6,7 +6,7 @@ module.exports = {
   cache: debug,
   context: path.join(__dirname, "src"),
   devtool: debug ? "inline-sourcemap" : null,
-  entry: "./js/main.js", //This uses src as .
+  entry: "./js/webpack_entry.js", //This uses src as .
   // watch: false, //probably shouldn't set this true since npm dev script does dev-server after
   module: {
     loaders: [
